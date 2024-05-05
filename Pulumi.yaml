@@ -1,0 +1,7 @@
+name: exa3
+runtime: go
+description: created by template
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: gcp-go

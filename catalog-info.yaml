@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: exa3
+  description:  project 
+  links:
+  - title: Pulumi Console
+    url: https://app.pulumi.com/nithursika/exa3
+spec:
+  type: project
+  lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: exa3
+  description: "created by template"
+  annotations:
+
+    pulumi.com/project-slug: nithursika/exa3
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
+  dependsOn:
+  - resource:default/exa3
+  system: example
